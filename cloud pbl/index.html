@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Add these meta tags -->
+    <meta name="description" content="Cloud Developer Portfolio - Specializing in AWS, DevOps, and Web Development">
+    <meta name="keywords" content="cloud computing, AWS, DevOps, web development">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+    <title>Cloud Portfolio</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">CloudDev</div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="navbar-right">
+            <div class="social-links">
+                <a href="#" class="social-link"><i class="fab fa-github"></i></a>
+                <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+                <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+            </div>
+            <button id="theme-toggle" class="theme-toggle">
+                <i class="fas fa-moon"></i>
+            </button>
+        </div>
+        <div class="burger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+    </nav>
+
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Welcome to My Cloud Journey</h1>
+            <p>Specializing in <span class="typed-text"></span></p>
+            <div class="hero-buttons">
+                <button class="cta-button">Explore Projects</button>
+                <a href="resume.pdf" download class="resume-button">
+                    <i class="fas fa-download"></i> Download Resume
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Update project cards with images and better descriptions -->
+    <section id="projects" class="projects">
+        <h2>Featured Projects</h2>
+        <div class="project-filters">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="aws">AWS</button>
+            <button class="filter-btn" data-filter="frontend">Frontend</button>
+            <button class="filter-btn" data-filter="backend">Backend</button>
+        </div>
+        <div class="project-grid">
+            <div class="project-card" data-category="aws frontend">
+                <img src="images/cloud-webapp.jpg" alt="Cloud Web App" onerror="this.src='https://images.unsplash.com/photo-1667372393119-3d4c48d07fc9?q=80&w=1000&auto=format&fit=crop'">
+                <h3>Cloud Web App</h3>
+                <p>A responsive web application built with modern cloud architecture.</p>
+                <div class="project-tags">
+                    <span>AWS</span>
+                    <span>React</span>
+                    <span>Node.js</span>
+                </div>
+                <a href="#" class="project-link">View Project</a>
+            </div>
+            <div class="project-card" data-category="aws backend">
+                <img src="images/serverless-api.jpg" alt="Serverless API" onerror="this.src='https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=1000&auto=format&fit=crop'">
+                <h3>Serverless API</h3>
+                <p>RESTful API built using serverless architecture and microservices.</p>
+                <div class="project-tags">
+                    <span>Lambda</span>
+                    <span>API Gateway</span>
+                    <span>DynamoDB</span>
+                </div>
+                <a href="#" class="project-link">View Project</a>
+            </div>
+            <div class="project-card" data-category="backend">
+                <img src="images/devops-pipeline.jpg" alt="DevOps Pipeline" onerror="this.src='https://images.unsplash.com/photo-1607743386760-88ac62b89b8a?q=80&w=1000&auto=format&fit=crop'">
+                <h3>DevOps Pipeline</h3>
+                <p>Automated CI/CD pipeline for continuous deployment.</p>
+                <div class="project-tags">
+                    <span>Jenkins</span>
+                    <span>Docker</span>
+                    <span>Kubernetes</span>
+                </div>
+                <a href="#" class="project-link">View Project</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="skills">
+        <h2>Technical Skills</h2>
+        <div class="skills-stats">
+            <div class="stat-item">
+                <i class="fas fa-code"></i>
+                <span class="counter" data-target="1000">0</span>
+                <p>Hours of Coding</p>
+            </div>
+            <div class="stat-item">
+                <i class="fas fa-cloud"></i>
+                <span class="counter" data-target="25">0</span>
+                <p>Cloud Projects</p>
+            </div>
+            <div class="stat-item">
+                <i class="fas fa-certificate"></i>
+                <span class="counter" data-target="5">0</span>
+                <p>Certifications</p>
+            </div>
+        </div>
+        <div class="skills-grid">
+            <div class="skill-item">
+                <h3>HTML/CSS</h3>
+                <div class="progress-bar">
+                    <div class="progress" style="width: 90%">90%</div>
+                </div>
+            </div>
+            <div class="skill-item">
+                <h3>JavaScript</h3>
+                <div class="progress-bar">
+                    <div class="progress" style="width: 85%">85%</div>
+                </div>
+            </div>
+            <div class="skill-item">
+                <h3>Cloud Computing</h3>
+                <div class="progress-bar">
+                    <div class="progress" style="width: 75%">75%</div>
+                </div>
+            </div>
+            <div class="skill-item">
+                <h3>DevOps</h3>
+                <div class="progress-bar">
+                    <div class="progress" style="width: 80%">80%</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Add before contact section -->
+    <section id="testimonials" class="testimonials">
+        <h2>What People Say</h2>
+        <div class="testimonial-slider">
+            <div class="testimonial-card">
+                <img src="https://randomuser.me/api/portraits/men/1.jpg" alt="Client">
+                <p>"Outstanding cloud solutions and excellent technical expertise. Delivered the project ahead of schedule."</p>
+                <h4>John Smith</h4>
+                <span>Tech Lead, CloudTech</span>
+            </div>
+            <div class="testimonial-card">
+                <img src="https://randomuser.me/api/portraits/women/1.jpg" alt="Client">
+                <p>"Exceptional problem-solving skills and great communication throughout the project."</p>
+                <h4>Sarah Johnson</h4>
+                <span>Project Manager, DevSecOps</span>
+            </div>
+            <div class="testimonial-card">
+                <img src="https://randomuser.me/api/portraits/men/2.jpg" alt="Client">
+                <p>"Implemented a robust CI/CD pipeline that significantly improved our deployment process."</p>
+                <h4>Mike Wilson</h4>
+                <span>DevOps Engineer, TechCorp</span>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <h2>Get In Touch</h2>
+        <form id="contact-form">
+            <input type="text" placeholder="Name" required>
+            <input type="email" placeholder="Email" required>
+            <textarea placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 CloudDev Portfolio. All rights reserved.</p>
+        <div class="social-links">
+            <a href="#" class="social-link"><i class="fab fa-github"></i></a>
+            <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+            <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+        </div>
+    </footer>
+
+    <!-- Add before your script.js -->
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <!-- Add before your existing scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+    <!-- Remove these duplicate social links at the bottom -->
+        <div class="scroll-to-top">
+            <i class="fas fa-arrow-up"></i>
+        </div>
+        
+        <!-- Remove this duplicate social-links div -->
+        <!-- <div class="social-links">
+            <a href="#" class="social-link"><i class="fab fa-github"></i></a>
+            <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+            <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+        </div> -->
+    </body>
+</html>

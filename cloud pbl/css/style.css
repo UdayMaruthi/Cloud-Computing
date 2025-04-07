@@ -1,0 +1,1254 @@
+/* Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+/* Navigation Styles */
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: #fff;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    z-index: 1000;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #2c3e50;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+}
+
+.nav-links li a {
+    color: #2c3e50;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    transition: color 0.3s ease;
+}
+
+.nav-links li a:hover {
+    color: #3498db;
+}
+
+/* Hero Section */
+.hero {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #6c5ce7, #a8e6cf);
+    color: white;
+    text-align: center;
+    padding: 0 1rem;
+}
+
+.hero-content h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.cta-button {
+    padding: 1rem 2rem;
+    font-size: 1.1rem;
+    border: none;
+    border-radius: 5px;
+    background: #fff;
+    color: #6c5ce7;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    margin-top: 2rem;
+}
+
+.cta-button:hover {
+    transform: translateY(-3px);
+}
+
+/* Projects Section */
+.projects {
+    padding: 5rem 2rem;
+    background: #f9f9f9;
+}
+
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.project-card {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+}
+
+/* Skills Section */
+.skills {
+    padding: 5rem 2rem;
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.skill-item {
+    background: #e9ecef;
+    padding: 1rem;
+    border-radius: 5px;
+    text-align: center;
+}
+
+/* Contact Section */
+.contact {
+    padding: 5rem 2rem;
+    background: #f9f9f9;
+}
+
+#contact-form {
+    max-width: 600px;
+    margin: 2rem auto;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+#contact-form input,
+#contact-form textarea {
+    padding: 0.8rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+#contact-form button {
+    padding: 1rem;
+    background: #6c5ce7;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+#contact-form button:hover {
+    background: #5b4cc4;
+}
+
+/* Footer */
+/* Update Footer and Social Links */
+footer {
+    text-align: center;
+    padding: 2rem;
+    background: #2c3e50;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.social-links {
+    display: flex;
+    gap: 2rem;
+    margin-top: 1rem;
+}
+
+.social-link {
+    color: white;
+    font-size: 1.5rem;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.social-link:hover {
+    color: var(--hover-color);
+    transform: translateY(-3px);
+}
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+    }
+    
+    .burger {
+        display: block;
+    }
+    
+    .hero-content h1 {
+        font-size: 2rem;
+    }
+    
+    .hero-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .testimonial-slider {
+        padding: 1rem;
+    }
+}
+
+/* Add at the beginning of the file */
+:root {
+    /* Base Colors */
+    --primary-color: #6c5ce7;
+    --secondary-color: #a8e6cf;
+    --text-primary: #2c3e50;
+}
+
+/* Organize sections with clear comments */
+/* Core Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+/* Navigation Styles */
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: #fff;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    z-index: 1000;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #2c3e50;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+}
+
+.nav-links li a {
+    color: #2c3e50;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    transition: color 0.3s ease;
+}
+
+.nav-links li a:hover {
+    color: #3498db;
+}
+
+/* Hero Section */
+.hero {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #6c5ce7, #a8e6cf);
+    color: white;
+    text-align: center;
+    padding: 0 1rem;
+}
+
+.hero-content h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.cta-button {
+    padding: 1rem 2rem;
+    font-size: 1.1rem;
+    border: none;
+    border-radius: 5px;
+    background: #fff;
+    color: #6c5ce7;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    margin-top: 2rem;
+}
+
+.cta-button:hover {
+    transform: translateY(-3px);
+}
+
+/* Projects Section */
+.projects {
+    padding: 5rem 2rem;
+    background: #f9f9f9;
+}
+
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.project-card {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+}
+
+/* Skills Section */
+.skills {
+    padding: 5rem 2rem;
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.skill-item {
+    background: #e9ecef;
+    padding: 1rem;
+    border-radius: 5px;
+    text-align: center;
+}
+
+/* Contact Section */
+.contact {
+    padding: 5rem 2rem;
+    background: #f9f9f9;
+}
+
+#contact-form {
+    max-width: 600px;
+    margin: 2rem auto;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+#contact-form input,
+#contact-form textarea {
+    padding: 0.8rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+#contact-form button {
+    padding: 1rem;
+    background: #6c5ce7;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+#contact-form button:hover {
+    background: #5b4cc4;
+}
+
+/* Footer */
+/* Update Footer and Social Links */
+footer {
+    text-align: center;
+    padding: 2rem;
+    background: #2c3e50;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.social-links {
+    display: flex;
+    gap: 2rem;
+    margin-top: 1rem;
+}
+
+.social-link {
+    color: white;
+    font-size: 1.5rem;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.social-link:hover {
+    color: var(--hover-color);
+    transform: translateY(-3px);
+}
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    /* Consolidate all media queries at the bottom */
+    @media (max-width: 768px) {
+        /* Combine all mobile styles here */
+        .nav-links,
+        .social-links {
+            display: none;
+        }
+        
+        .burger {
+            display: block;
+        }
+        
+        .hero-content h1 {
+            font-size: 2rem;
+        }
+        
+        .hero-buttons {
+            flex-direction: column;
+            align-items: center;
+        }
+        
+        .testimonial-slider {
+            padding: 1rem;
+        }
+    }
+}
+
+/* Add these at the end of your existing CSS */
+
+/* Dark Mode Styles */
+/* Update the theme variables */
+[data-theme="dark"] {
+    --bg-color: #1a1a1a;
+    --text-color: #ffffff;
+    --card-bg: #2d2d2d;
+    --hover-color: #3498db;
+    --input-bg: #333333;
+    --input-text: #ffffff;
+    --input-border: #444444;
+    --navbar-bg: #2d2d2d;
+}
+
+[data-theme="light"] {
+    --bg-color: #ffffff;
+    --text-color: #333333;
+    --card-bg: #ffffff;
+    --hover-color: #3498db;
+    --input-bg: #ffffff;
+    --input-text: #333333;
+    --input-border: #dddddd;
+    --navbar-bg: #ffffff;
+}
+
+/* Update navbar styles */
+.navbar {
+    background: var(--navbar-bg);
+}
+
+.nav-links li a {
+    color: var(--text-color);
+}
+
+/* Update form input styles */
+#contact-form input,
+#contact-form textarea {
+    background-color: var(--input-bg);
+    color: var(--input-text);
+    border: 1px solid var(--input-border);
+}
+
+/* Update theme toggle button */
+.theme-toggle {
+    background: none;
+    border: none;
+    color: var(--text-color);
+    cursor: pointer;
+    font-size: 1.2rem;
+    padding: 0.5rem;
+    margin-left: 1rem;
+    transition: color 0.3s ease;
+}
+
+.theme-toggle:hover {
+    color: var(--hover-color);
+}
+
+/* Update project card styles */
+.project-card {
+    background: var(--card-bg);
+    color: var(--text-color);
+}
+
+/* Update skill item styles */
+.skill-item {
+    background: var(--card-bg);
+    color: var(--text-color);
+    border: 1px solid var(--input-border);
+}
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Theme Toggle Button */
+.theme-toggle {
+    background: none;
+    border: none;
+    color: var(--text-color);
+    cursor: pointer;
+    font-size: 1.2rem;
+    padding: 0.5rem;
+    margin-left: 1rem;
+}
+
+/* Enhanced Project Cards */
+.project-card {
+    background: var(--card-bg);
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.project-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.project-card a:hover img {
+    transform: scale(1.05);
+    filter: brightness(0.9);
+}
+
+.project-tags {
+    display: flex;
+    gap: 0.5rem;
+    margin: 1rem 0;
+    flex-wrap: wrap;
+}
+
+.project-tags span {
+    background: var(--hover-color);
+    color: white;
+    padding: 0.2rem 0.8rem;
+    border-radius: 15px;
+    font-size: 0.9rem;
+}
+
+.project-link {
+    display: inline-block;
+    text-decoration: none;
+    color: var(--hover-color);
+    margin-top: 1rem;
+    font-weight: bold;
+}
+
+.project-link:hover {
+    text-decoration: underline;
+}
+
+/* Burger Menu Styles */
+.burger {
+    display: none;
+    cursor: pointer;
+}
+
+.burger div {
+    width: 25px;
+    height: 3px;
+    background-color: #2c3e50;
+    margin: 5px;
+    transition: all 0.3s ease;
+}
+
+/* Navigation Animation */
+@keyframes navLinkFade {
+    from {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* Burger Animation */
+.toggle .line1 {
+    transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.toggle .line2 {
+    opacity: 0;
+}
+
+.toggle .line3 {
+    transform: rotate(45deg) translate(-5px, -6px);
+}
+
+/* Mobile Navigation */
+@media screen and (max-width: 768px) {
+    .nav-links {
+        position: absolute;
+        right: 0px;
+        height: 92vh;
+        top: 8vh;
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 50%;
+        transform: translateX(100%);
+        transition: transform 0.5s ease-in;
+        box-shadow: -2px 0 5px rgba(0,0,0,0.1);
+    }
+    
+    .nav-active {
+        transform: translateX(0%);
+    }
+    
+    .nav-links li {
+        opacity: 0;
+    }
+}
+
+/* Section Animation */
+section {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 0.5s ease;
+}
+
+section.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Add after your skills section styles */
+.skills-stats {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 3rem;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.stat-item {
+    text-align: center;
+    padding: 1.5rem;
+    background: var(--card-bg);
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+    min-width: 200px;
+}
+
+.stat-item i {
+    font-size: 2.5rem;
+    color: var(--hover-color);
+    margin-bottom: 1rem;
+}
+
+.stat-item .counter {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: var(--text-color);
+    margin: 1rem 0;
+    display: block;
+}
+
+.stat-item p {
+    color: var(--text-color);
+    font-size: 1.1rem;
+}
+.skill-item {
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+}
+
+.skill-item h3 {
+    margin-bottom: 1rem;
+    color: var(--text-color);
+}
+
+.progress-bar {
+    width: 100%;
+    height: 20px;
+    background-color: var(--input-border);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.progress {
+    height: 100%;
+    background: linear-gradient(90deg, #6c5ce7, #a8e6cf);
+    border-radius: 10px;
+    transition: width 1.5s ease-in-out;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 0.9rem;
+    font-weight: bold;
+}
+
+/* Add animation for progress bars */
+@keyframes fillProgress {
+    from { width: 0; }
+    to { width: 100%; }
+}
+
+.skill-item.show .progress {
+    animation: fillProgress 1.5s ease-out forwards;
+}
+
+/* Scroll to Top Button */
+.scroll-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: var(--hover-color);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    cursor: pointer;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    z-index: 1000;
+}
+
+.scroll-to-top.visible {
+    opacity: 1;
+}
+
+/* Social Links */
+/* Update navbar styles to accommodate social links */
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: var(--navbar-bg);
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    z-index: 1000;
+}
+
+/* Add styles for the right section of navbar */
+/* Update navbar-right spacing */
+.navbar-right {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    margin-right: 1rem;
+}
+
+/* Adjust social links positioning */
+.social-links {
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+}
+
+/* Add to your existing CSS */
+.typed-text {
+    color: #a8e6cf;
+    font-weight: bold;
+}
+
+.typed-cursor {
+    color: #a8e6cf;
+    font-weight: bold;
+}
+
+/* Update social link icons size and spacing */
+.social-link {
+    color: var(--text-color);
+    font-size: 1.1rem;
+    transition: color 0.3s ease, transform 0.3s ease;
+    padding: 0.3rem;
+}
+
+/* Remove duplicate social links from footer */
+.social-link:hover {
+    color: var(--hover-color);
+    transform: translateY(-2px);
+}
+
+/* Remove the fixed positioning styles */
+@media (max-width: 768px) {
+    .social-links {
+        display: none; /* Hide on mobile to prevent cluttering */
+    }
+}
+
+.project-filters {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 2rem;
+    flex-wrap: wrap;
+}
+
+.filter-btn {
+    padding: 0.5rem 1.5rem;
+    border: none;
+    border-radius: 25px;
+    background: var(--card-bg);
+    color: var(--text-color);
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.filter-btn.active {
+    background: var(--hover-color);
+    color: white;
+}
+
+.project-card {
+    transition: all 0.4s ease;
+}
+
+.project-card.hide {
+    display: none;
+}
+
+/* Testimonials Section */
+.testimonials {
+    padding: 5rem 2rem;
+    background: var(--bg-color);
+}
+
+.testimonial-slider {
+    display: flex;
+    gap: 2rem;
+    overflow-x: auto;
+    padding: 2rem 0;
+    scroll-snap-type: x mandatory;
+}
+
+.testimonial-card {
+    min-width: 300px;
+    padding: 2rem;
+    background: var(--card-bg);
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+    scroll-snap-align: start;
+    text-align: center;
+}
+
+.testimonial-card img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+}
+
+.testimonial-card p {
+    font-style: italic;
+    margin-bottom: 1rem;
+    color: var(--text-color);
+}
+
+.testimonial-card h4 {
+    color: var(--text-color);
+    margin-bottom: 0.5rem;
+}
+
+.testimonial-card span {
+    color: var(--hover-color);
+    font-size: 0.9rem;
+}
+
+/* Resume Button */
+.hero-buttons {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+.resume-button {
+    padding: 1rem 2rem;
+    background: transparent;
+    border: 2px solid #fff;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.resume-button:hover {
+    background: #fff;
+    color: var(--hover-color);
+}
+
+@media (max-width: 768px) {
+    .hero-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .testimonial-slider {
+        padding: 1rem;
+    }
+}
+
+/* Add loading spinner styles */
+.loading-spinner {
+    display: none;
+    width: 50px;
+    height: 50px;
+    border: 5px solid #f3f3f3;
+    border-top: 5px solid var(--hover-color);
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+    margin: 20px auto;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* Add error message styles */
+.error-message {
+    color: #dc3545;
+    font-size: 0.875rem;
+    margin-top: 0.25rem;
+}
+.skill-item {
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+}
+
+.skill-item h3 {
+    margin-bottom: 1rem;
+    color: var(--text-color);
+}
+
+.progress-bar {
+    width: 100%;
+    height: 20px;
+    background-color: var(--input-border);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.progress {
+    height: 100%;
+    background: linear-gradient(90deg, #6c5ce7, #a8e6cf);
+    border-radius: 10px;
+    transition: width 1.5s ease-in-out;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 0.9rem;
+    font-weight: bold;
+}
+
+/* Add animation for progress bars */
+@keyframes fillProgress {
+    from { width: 0; }
+    to { width: 100%; }
+}
+
+.skill-item.show .progress {
+    animation: fillProgress 1.5s ease-out forwards;
+}
+
+/* Scroll to Top Button */
+.scroll-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: var(--hover-color);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    cursor: pointer;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    z-index: 1000;
+}
+
+.scroll-to-top.visible {
+    opacity: 1;
+}
+
+/* Social Links */
+/* Update navbar styles to accommodate social links */
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: var(--navbar-bg);
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    z-index: 1000;
+}
+
+/* Add styles for the right section of navbar */
+/* Update navbar-right spacing */
+.navbar-right {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    margin-right: 1rem;
+}
+
+/* Adjust social links positioning */
+.social-links {
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+}
+
+/* Add to your existing CSS */
+.typed-text {
+    color: #a8e6cf;
+    font-weight: bold;
+}
+
+.typed-cursor {
+    color: #a8e6cf;
+    font-weight: bold;
+}
+
+/* Update social link icons size and spacing */
+.social-link {
+    color: var(--text-color);
+    font-size: 1.1rem;
+    transition: color 0.3s ease, transform 0.3s ease;
+    padding: 0.3rem;
+}
+
+/* Remove duplicate social links from footer */
+.social-link:hover {
+    color: var(--hover-color);
+    transform: translateY(-2px);
+}
+
+/* Remove the fixed positioning styles */
+@media (max-width: 768px) {
+    .social-links {
+        display: none; /* Hide on mobile to prevent cluttering */
+    }
+}
+
+.project-filters {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 2rem;
+    flex-wrap: wrap;
+}
+
+.filter-btn {
+    padding: 0.5rem 1.5rem;
+    border: none;
+    border-radius: 25px;
+    background: var(--card-bg);
+    color: var(--text-color);
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.filter-btn.active {
+    background: var(--hover-color);
+    color: white;
+}
+
+.project-card {
+    transition: all 0.4s ease;
+}
+
+.project-card.hide {
+    display: none;
+}
+
+/* Testimonials Section */
+.testimonials {
+    padding: 5rem 2rem;
+    background: var(--bg-color);
+}
+
+.testimonial-slider {
+    display: flex;
+    gap: 2rem;
+    overflow-x: auto;
+    padding: 2rem 0;
+    scroll-snap-type: x mandatory;
+}
+
+.testimonial-card {
+    min-width: 300px;
+    padding: 2rem;
+    background: var(--card-bg);
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+    scroll-snap-align: start;
+    text-align: center;
+}
+
+.testimonial-card img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+}
+
+.testimonial-card p {
+    font-style: italic;
+    margin-bottom: 1rem;
+    color: var(--text-color);
+}
+
+.testimonial-card h4 {
+    color: var(--text-color);
+    margin-bottom: 0.5rem;
+}
+
+.testimonial-card span {
+    color: var(--hover-color);
+    font-size: 0.9rem;
+}
+
+/* Resume Button */
+.hero-buttons {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+.resume-button {
+    padding: 1rem 2rem;
+    background: transparent;
+    border: 2px solid #fff;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.resume-button:hover {
+    background: #fff;
+    color: var(--hover-color);
+}
+
+@media (max-width: 768px) {
+    .hero-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .testimonial-slider {
+        padding: 1rem;
+    }
+}
+
+/* Add loading animation for images */
+.project-card img {
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.project-card img.loaded {
+    opacity: 1;
+}
+
+/* Add hover effects for project cards */
+.project-card {
+    position: relative;
+    overflow: hidden;
+}
+
+.project-card::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background: var(--hover-color);
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+}
+
+.project-card:hover::after {
+    transform: scaleX(1);
+}
+
+/* Add section headings style */
+section h2 {
+    text-align: center;
+    margin-bottom: 3rem;
+    position: relative;
+    padding-bottom: 1rem;
+}
+
+section h2::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100px;
+    height: 3px;
+    background: var(--hover-color);
+}
